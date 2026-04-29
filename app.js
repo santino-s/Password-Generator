@@ -10,6 +10,7 @@ const strengthLevel = document.querySelector('.strength-lvl');
 // SELECT BUTTONS
 const copyBtn = document.querySelector('#btn-copy');
 const newBtn = document.querySelector('.btn-new');
+const textBtn = document.querySelector("#btn-text")
 
 // ARRAY OF PASSWORD COMBINATION POSSIBILITIES
 const inventory = [
@@ -187,7 +188,22 @@ copyBtn.addEventListener('click', function(){
     // COPY THE TEXT
     navigator.clipboard.writeText(password.innerText);
 
+   
+
+    // CALLING THE FUNCTION
+    changeText(textBtn, "Copied!", "Copy Password")
+
 });
+
+
+// FUNCTION TO CHANGE TEXT IN THE COPY PASSWORD BUTTON
+function changeText (element, newText, originalText) {
+    element.textContent = newText;
+    setTimeout(function(){ 
+        element.textContent = originalText;
+    }, 3000);
+};
+
 
 
 
