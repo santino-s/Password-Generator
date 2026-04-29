@@ -1,0 +1,251 @@
+body {
+    height: 100vh;
+    background-color: #222831;
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #EEEEEE;
+}
+
+header h1 {
+    margin-bottom: 1rem;
+    background: linear-gradient(to right, #EEEEEE, #FFD369); -webkit-text-fill-color: transparent; background-clip: text;
+    font-size: 3.5em;
+}
+
+header p {
+    padding-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.selectors {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    color: #EEEEEE;
+    accent-color: #FFD369;
+    margin-bottom: 1.5rem;
+}
+
+.selectors label:not(:last-child) {
+    margin-right: 1rem;
+}
+
+.selectors input:not(:last-child) {
+    margin-right: .5rem;
+}
+
+span {
+    margin-left: 3px;
+}
+
+#password {
+    display: flex;
+    justify-content: center;
+    margin-top: 4em;
+    color: #FFD369;
+    text-shadow: 2px 2px 4px #222831;
+    font-size: 2.7em;
+   
+}
+
+.password-box {
+    background-color: #393E46;
+    padding: 10px;
+    border: solid #EEEEEE 2px;
+    margin: 0 auto;
+    max-width: 75%;
+
+}
+
+.password-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5rem;
+    font-size: 1.4rem;
+    color: #EEEEEE;
+}
+
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    margin-top: 4rem;
+    background-color: #222831;
+    color:#EEEEEE;
+}
+
+button {
+    font-size: large;
+    margin-right: 3rem;
+    margin-left: 3rem;
+    background-color: #222831;
+    border: solid #EEEEEE 1px;
+    color: #EEEEEE;;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-bottom: 1.5rem;
+}
+
+button:hover {
+    border: solid #FFD369 1px;
+    color: #FFD369;
+}
+
+#random {
+    background-color: #222831;
+    border: solid #EEEEEE 1px;
+    color:#EEEEEE;
+    cursor: pointer;
+    appearance: none;
+    padding: 7px 14px;
+    border-radius: 20px;
+    font-size: medium;
+}
+
+#random:hover {
+    border: solid #FFD369 1px;
+    color: #FFD369;
+}
+
+.range-length {
+    color: #FFD369;
+    text-shadow: 2px 2px 4px #222831;
+}
+
+/* CLASSES TO BE USED IN JS */
+
+.red {
+    color: red;
+    text-shadow: 2px 2px 4px #222831;
+}
+
+.yellow {
+    color: #FFD369;
+    text-shadow: 2px 2px 4px #222831;
+}
+
+.light-green {
+    background: linear-gradient(to right, #FFD369, #FFD369, rgb(21, 255, 0)); -webkit-text-fill-color: transparent; background-clip: text;
+   
+}
+.green {
+    color:rgb(21, 255, 0);
+    text-shadow: 2px 2px 4px #222831;
+}
+
+.white {
+    color: #EEEEEE;
+}
+
+
+@media (max-width: 1300px) {
+body {
+    overflow: auto;
+}
+}
+
+@media (max-width: 710px) {
+    header p {
+    font-size: 1.3em;
+   
+}
+    #password {
+        font-size: 2em;
+    }
+    .selectors {
+        font-size: 1em;
+        flex-wrap: wrap;
+        margin-top: 1.5rem;
+    }
+    #random {
+        display: flex;
+        flex-direction: row;
+        margin-top: 1.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+   
+    header h1 {
+        font-size: 2.5rem;
+    }
+    header p {
+        font-size: 1em;
+    }
+    .password-box {
+    background-color: #222831;
+    padding: 10px;
+    margin: 0 auto;
+    border: none;
+    max-width: none;
+    }
+
+    .password-section {
+        font-size: 1.3em;
+    }
+
+    #password {
+        margin-top: 3.5rem;
+    }
+
+    button {
+        font-size: medium;
+        white-space: nowrap;
+        margin-right: 2rem;
+    }
+    button:last-child {
+        margin-right: 48px;
+        margin-left: 2rem;
+    }
+
+}
+
+@media (max-width: 415px) {
+       
+    header h1 {
+        font-size: 2rem;
+    }
+    header p {
+        font-size: .9em;
+    }
+    .password-box {
+    background-color: #222831;
+    padding: 10px;
+    margin: 0 auto;
+    border: none;
+    max-width: none;
+    }
+
+    .password-section {
+        font-size: 1.2rem;
+    }
+
+    #password {
+        margin-top: 3.5rem;
+        font-size: 1.7rem;
+    }
+
+    button {
+        font-size: medium;
+        white-space: nowrap;
+        margin-right: 1rem;
+    }
+    button:last-child {
+        margin-right: 48px;
+        margin-left: 1rem;
+    }
+
+}

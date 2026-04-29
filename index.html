@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Password Generator</h1>
+        <p>Select the options to create a strong complex password</p>
+    </header>
+
+    <main>
+        <div class="selectors">
+            <input type="checkbox" id="lettersUpper" name="lettersUpper">
+            <label for="lettersUpper">A-Z</label>
+
+            <input type="checkbox" id="lettersLower" name="lettersLower">
+            <label for="lettersLower">a-z</label>
+
+            <input type="checkbox" id="allNumbers" name="allNumbers">
+            <label for="allNumbers">0-9</label>
+
+            <input type="checkbox" id="specialCharacters" name="specialCharacters">
+            <label for="specialCharacters">!@#$&*%</label>
+            
+           
+
+            <label for="length">Length of Password: <span class="range-length">8</span> </label>
+            <input 
+                type="range"
+                id="length"
+                name="length"
+                min="6"
+                max="20"
+                value="8"
+                step="1" />
+
+            <input type="button" id="random" name="random" value="Random Length">
+        </div>
+        <div class="password-box">
+            <h1 id="password">YOUR PASSWORD HERE</h1>
+    
+            <div class="password-section">
+                <p>Password Strength: <span class="strength-lvl">Weak - Very Strong</span> </p>
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="btn-copy">Copy Password</button>
+            <button class="btn-new">Reset</button>
+        </div>
+    </main>
+  
+    
+<script src="app.js"></script>
+</body>
+</html>
